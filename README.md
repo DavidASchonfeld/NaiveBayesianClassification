@@ -2,8 +2,7 @@
 Code by David Schonfeld
 
 ### Description
-
-<br />This program uses Naive Bayes Classification to classify a series of votes as being from a democrat or republican.
+This program uses Naive Bayes Classification to classify a series of votes as being from a democrat or republican.
 <br />There is no laplacian smoothing in this script.
 <br />This causes a "ZeroDivisionError" to occur if
 - a vote outcome (Y,N,Q) in classifying_data does not exist
