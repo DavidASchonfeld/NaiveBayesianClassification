@@ -1,6 +1,8 @@
 # Naive Bayes Classification
 Code by David Schonfeld
 
+### Description
+
 <br />This program uses Naive Bayes Classification to classify a series of votes as being from a democrat or republican.
 <br />There is no laplacian smoothing in this script.
 <br />This causes a "ZeroDivisionError" to occur if
@@ -10,7 +12,7 @@ Code by David Schonfeld
 - a vote outcome (Y,N,Q) in classifying_data that did not
        at all exist in the training data.
 
- ### The Algorithm\'s Formula
+ ### The Algorithms Formula
      For each party:
          <br />(Note: A = each value set for each law (Y, N or ?))
 		 
