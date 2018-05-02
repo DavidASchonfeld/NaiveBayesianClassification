@@ -28,22 +28,26 @@ P(Party | A, B, C, D, E etc.) =
 There are 2 inputs in this script:
 - the training set
 - the data to be classified
-For both of these sets,
-- each row represents a different politician
-- each column represents a different bill
-- You can add as many columns and/or rows as you would like
+<br />For both of these sets,
+- each row represents a different politician.
+- each column represents a different bill.
+- you can add as many columns and/or rows as you would like.
 
-##### The Training Set
+#### The Training Set
 Example:
-```republican,y,y,n,?,y,n,n,?,n,y,?,y,y,n,n,?
+```
+republican,y,y,n,?,y,n,n,?,n,y,?,y,y,n,n,?
 republican,n,?,n,?,y,?,n,n,y,n,?,y,y,y,n,?
 democrat,?,n,y,?,y,y,?,?,y,n,n,n,n,y,n,n
-democrat,n,?,y,n,?,y,n,y,y,n,y,n,?,n,n,y```
-
-##### Data to be Classified
+democrat,n,?,y,n,?,y,n,y,y,n,y,n,?,n,n,y
+```
+<br />
+#### Data to be Classified
 Example:
-```party,n,?,n,y,n,y,y,y,?,n,n,n,y,n,?,n
-party,n,y,y,?,y,n,n,n,y,?,?,y,n,y,n,y```
+```
+party,n,?,n,y,n,y,y,y,?,n,n,n,y,n,?,n
+party,n,y,y,?,y,n,n,n,y,?,?,y,n,y,n,y
+```
 
 
 
