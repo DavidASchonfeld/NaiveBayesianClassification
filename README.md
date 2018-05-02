@@ -28,6 +28,7 @@ P(Party | A, B, C, D, E etc.) =
 There are 2 inputs in this script:
 - the training set
 - the data to be classified
+
 <br />For both of these sets,
 - each row represents a different politician.
 - each column represents a different bill.
