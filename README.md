@@ -12,8 +12,8 @@ This program uses Naive Bayes Classification to classify a series of votes as be
        at all exist in the training data.
 
 ### The Algorithms Formula
-     For each party:
-         <br />(Note: A = each value set for each law (Y, N or ?))
+For each party:
+<br />(Note: A = each value set for each law (Y, N or ?))
 		 
          ```P(Party | A, B, C, D, E etc.)
 
