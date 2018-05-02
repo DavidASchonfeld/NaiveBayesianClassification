@@ -42,7 +42,7 @@ republican,n,?,n,?,y,?,n,n,y,n,?,y,y,y,n,?
 democrat,?,n,y,?,y,y,?,?,y,n,n,n,n,y,n,n
 democrat,n,?,y,n,?,y,n,y,y,n,y,n,?,n,n,y
 ```
-<br />
+
 #### Data to be Classified
 Example:
 ```
