@@ -4,10 +4,10 @@ Code by David Schonfeld
 <br />Using Naive Bayesian Classification to classify a series of votes as being from a democrat or republican
 <br />There is no laplacian smoothCing in this script
 <br />This causes a "ZeroDivisionError" to occur if
-..* a vote outcome (Y,N,Q) in classifying_data does not exist
+- a vote outcome (Y,N,Q) in classifying_data does not exist
        in the same vote column in training data for the political
        party it should match with
-..* a vote outcome (Y,N,Q) in classifying_data that did not
+- a vote outcome (Y,N,Q) in classifying_data that did not
        at all exist in the training data
 
  ### The Algorithm's Formula
