@@ -11,7 +11,7 @@ This program uses Naive Bayes Classification to classify a series of votes as be
 - a vote outcome (Y,N,Q) in classifying_data that did not
        at all exist in the training data.
 
-### The Algorithms Formula
+### The Algorithm's Formula
 For each party:
 <br />(Note: A = each value set for each law (Y, N or ?))
 		 
