@@ -15,8 +15,17 @@ This program uses Naive Bayes Classification to classify a series of votes as be
 For each party:
 <br />(Note: A = each value set for each law (Y, N or ?))
 		 
-         ```P(Party | A, B, C, D, E etc.)
+```P(Party | A, B, C, D, E etc.) =
 
-           P(A|Party) * P(B|Party) * P(C|Party) etc. * P(Party)
-         = -----------------------------------------
-           P(A|Democ)P(B|Democ)...P(Democrat) + P(A|Repub)P(B|Repub)...P(Repub)```
+  P(A|Party) * P(B|Party) * P(C|Party) etc. * P(Party)
+= --------------------------------------------------------------------
+  P(A|Democ)P(B|Democ)...P(Democrat) + P(A|Repub)P(B|Repub)...P(Repub)```
+  
+  <br /> Testin
+  
+  
+  ```
+
+                                P(A|Party) * P(B|Party) * P(C|Party) etc. * P(Party)
+P(Party | A, B, C, D, E etc.) = --------------------------------------------------------------------
+                                P(A|Democ)P(B|Democ)...P(Democrat) + P(A|Repub)P(B|Repub)...P(Repub)```
