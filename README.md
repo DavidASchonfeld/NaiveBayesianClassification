@@ -5,7 +5,7 @@ Code by David Schonfeld
 This program uses Naive Bayes Classification to classify a series of votes as being from a Democrat or a Republican.
 <br />There is no Laplacian smoothing in this script.
 <br />This causes a "ZeroDivisionError" to occur if
-- a vote outcome (Y,N,Q)(Q represents abstention) in classifying_data does not exist
+- a vote outcome (Y,N,Q)(Q and ? both represent abstention) in classifying_data does not exist
        in the same vote column in training data for the political
        party it should match with.
 - a vote outcome (Y,N,Q) in classifying_data that did not
