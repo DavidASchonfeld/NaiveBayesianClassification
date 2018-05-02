@@ -1,25 +1,4 @@
 #!/usr/bin/env python3
-#
-# Naive Bayesian Classification
-# Code by David Schonfeld
-#
-# Using Naive Bayesian Classification to classify a series of votes as being from a democrat or republican
-# There is no laplacian smoothing in this script
-# This causes a "ZeroDivisionError" to occur if
-#   -a vote outcome (Y,N,Q) in classifying_data does not exist
-#       in the same vote column in training data for the political
-#       party it should match with
-#   -a vote outcome (Y,N,Q) in classifying_data that did not
-#       at all exist in the training data
-#
-# The Algorithm's Formula #
-#     For each party:
-#         (Note: A = each value set for each law (Y, N or ?))
-#         P(Party | A, B, C, D, E etc.)
-#
-#           P(A|Party) * P(B|Party) * P(C|Party) etc. * P(Party)
-#         = -----------------------------------------
-#           P(A|Democ)P(B|Democ)...P(Democrat) + P(A|Repub)P(B|Repub)...P(Repub)
 
 import os, sys, re
 
@@ -27,8 +6,7 @@ import os, sys, re
 array_training = []
 array_classifying = []
 
-# The method call that starts the appropriate methods in this
-# file is located at the bottom of this file.
+# The method call that starts the appropriate methods in this file is located at the bottom of this file.
 
 def exitUsageStatement():
     print ("Usage: %s filenameForTrainingData filenameForClassifyingData" % sys.argv[0])
@@ -152,6 +130,7 @@ def runProgram():
         P_MysteryPersonIsDemocrat = Numerator_Democrat / Denominator
 
         print (P_MysteryPersonIsDemocrat)
+
 
 # Code that runs as soon as the script is called
 runProgram()
