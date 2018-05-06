@@ -3,8 +3,7 @@ Code by David Schonfeld
 
 ### Description
 This program uses Naive Bayes Classification to classify a series of votes as being from a Democrat or a Republican.
-<br />There is no Laplacian smoothing in this script.
-<br />This causes a "ZeroDivisionError" to occur if
+<br />There is no Laplacian smoothing in this script. This causes a "ZeroDivisionError" to occur if
 - a vote outcome (Y,N,Q)(Q and ? both represent abstention) in classifying_data does not exist
        in the same vote column in training data for the political
        party it should match with.
@@ -38,9 +37,15 @@ There are 2 inputs in this script:
 Example:
 ```
 republican,y,y,n,?,y,n,n,?,n,y,?,y,y,n,n,?
-republican,n,?,n,?,y,?,n,n,y,n,?,y,y,y,n,?
 democrat,?,n,y,?,y,y,?,?,y,n,n,n,n,y,n,n
-democrat,n,?,y,n,?,y,n,y,y,n,y,n,?,n,n,y
+republican,n,?,n,?,y,?,n,n,y,n,?,y,y,y,n,?
+republican,n,?,n,?,y,?,n,n,y,n,?,y,y,y,n,?
+democrat,n,y,y,?,n,y,n,?,y,n,?,?,?,n,y,n
+democrat,y,?,n,n,n,?,n,y,y,?,y,n,?,y,n,?
+democrat,n,?,?,n,n,y,n,n,y,y,?,n,?,n,n,y
+democrat,?,y,n,n,?,?,n,n,y,?,y,y,n,?,y,n
+republican,n,?,?,?,y,n,y,n,y,n,y,?,n,n,y,n
+democrat,?,?,n,n,?,y,y,n,?,?,y,?,n,y,y,y
 ```
 
 #### Data to be Classified
@@ -48,6 +53,8 @@ Example:
 ```
 party,n,?,n,y,n,y,y,y,?,n,n,n,y,n,?,n
 party,n,y,y,?,y,n,n,n,y,?,?,y,n,y,n,y
+party,y,?,y,y,y,?,?,n,y,y,n,?,n,n,y,y
+party,?,n,?,n,?,y,?,n,n,n,y,n,n,?,n,n
 ```
 
 
